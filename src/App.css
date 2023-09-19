@@ -1,11 +1,83 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Barriecito&family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Handjet:wght@100;200;300;400;500;600;700;800;900&family=Major+Mono+Display&family=Permanent+Marker&family=Sedgwick+Ave+Display&family=Urbanist:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&family=Major+Mono+Display&family=Urbanist:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,900&display=swap");
+
+.body {
+  font-family: "Lexend Deca", sans-serif;
+  display: flex;
+  /* display: flex; */
+  /* min-width: 100vh; */
+  /* max-width: 100vh; */
+  margin: 20px 10px 10px 10px;
+  /* display: flex;
+  justify-content: center; */
 }
 
-.logo {
+h1,
+h2,
+h3 {
+  font-family: "Major Mono Display", monospace;
+}
+
+/* #headerContainer {
+  display: flex;
+  flex-wrap: nowrap;
+} */
+
+.nameTitle {
+  display: flex;
+  font-family: "Major Mono Display", monospace;
+  font-size: 10px;
+  /* white-space: nowrap; stops it being responsive */
+  margin: auto;
+  /* position: relative;
+  left: -1px; */
+}
+
+.jobTitle {
+  display: flex;
+  font-size: 20px;
+  /* white-space: nowrap; */
+  font-family: "Major Mono Display", monospace;
+  margin: auto;
+}
+
+/* #jobTitleContainer {
+  display: flex;
+  justify-content: center;
+} */
+
+#headerContainer {
+  display: flex;
+  flex-direction: row;
+  /* width: 100%; */
+  justify-content: flex-end;
+}
+
+#navBarItemsWrapper {
+  display: flex;
+}
+
+.navBarItems {
+  padding: 0 5px 0 5px;
+}
+
+.projectCards {
+  height: 250px;
+  width: 250px;
+
+  /* object-fit: cover; */
+}
+
+#crimeCheckerImage,
+#agifyImage {
+  /* object-fit: cover; did not work */
+  /* makes the image a percent of the container, cool  */
+  width: 80%;
+  height: 100%;
+}
+
+/* boiler plate stuff */
+/* .logo {
   height: 6em;
   padding: 1.5em;
   will-change: filter;
@@ -39,4 +111,4 @@
 
 .read-the-docs {
   color: #888;
-}
+} */
