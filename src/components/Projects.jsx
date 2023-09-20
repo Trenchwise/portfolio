@@ -5,29 +5,30 @@ import agifyApp from "../assets/images/agifyApp.png";
 const Projects = () => {
   return (
     <>
+      <h1>Work</h1>
       <div id="projectsWrapper">
-        <h1>Projects</h1>
-
         <div className="projectCards">
           <h3>Crime Checker</h3>
           <div>
             <img
               id="crimeCheckerImage"
-              // height="300px"
-              // width="300px"
               src={crimeCheckerPic}
               alt="crimeCheckerpic"
             />
           </div>
         </div>
-        <div>
+        <div className="projectCards">
           <h3>Simpsons Quote Generator</h3>
+          <div id="simpsons"></div>
         </div>
         <div className="projectCards">
           <h3>Agify</h3>
           <img id="agifyImage" src={agifyApp} alt="agifyApp" />
         </div>
-        <h3>Homage</h3>
+        <div className="projectCards">
+          <h3>Homage</h3>
+          <div id="homage"></div>
+        </div>
       </div>
     </>
   );
