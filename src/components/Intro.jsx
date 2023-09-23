@@ -106,6 +106,7 @@ const Intro = () => {
         </div>
         <div>I like to solve problems</div>
       </div>
+      <div className="sectionLine"></div>
     </>
   );
 };

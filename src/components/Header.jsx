@@ -8,8 +8,9 @@ const Header = () => {
         <div className="nameTitle">
           <h1>Tanya French</h1>
         </div>
-        <div id="burger">
+        <div id="burgerWrapper">
           <svg
+            id="burgerSvg"
             viewBox="0 -10 166 166"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -81,6 +82,8 @@ const Header = () => {
           </div>
         </div>
       </div>
+      <h2 id="jobTitle">Frontend Developer</h2>
+      <div className="sectionLine" id="navBarSectionLine"></div>
     </>
   );
 };
