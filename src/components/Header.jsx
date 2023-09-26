@@ -11,18 +11,18 @@ const Header = () => {
 
         <div id="burgerWrapper">
           {/* starting working from this point - it contains the whole burger bumph */}
-          <nav className="burgerNav">
-            <input
+          <nav className="burgerNav" tableindex="0">
+            {/* <input
               type="checkBox"
               id="checkBox"
               className="burgerMenuCheckBox"
             />
             <label for="checkBox" className="burgerNavCheckBox">
               hello
-            </label>
+            </label> */}
 
             {/* this contains the bits with the burger svg */}
-            <ul className="burgerMenu">
+            <ul className="burgerMenu" tabIndex={0}>
               <li className="burgerMenuSvg">
                 <a href="#"></a>
                 <svg
