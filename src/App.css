@@ -74,6 +74,7 @@ h3 {
 
 #headerContainer {
   display: flex;
+  justify-content: space-between;
   position: sticky;
   top: 0.5px;
   left: 0;
@@ -107,7 +108,9 @@ h3 {
 }
 
 #burgerWrapper {
-  display: flex;
+  position: absolute;
+  top: 0px;
+  right: 0;
 }
 
 #burgerSvg {
@@ -127,6 +130,7 @@ h3 {
 
 #navBarItemsWrapper {
   display: flex;
+  justify-content: flex-end;
 }
 
 .navBarItems {
@@ -143,7 +147,7 @@ h3 {
   flex-direction: column;
   padding: 100px 0px 100px 0px;
   font-size: 30px;
-  text-align: center;
+  text-align: left;
   width: 100%;
   /* border-bottom: solid black 0.5px; */
   /* background-color: #ff90e7; */
@@ -159,9 +163,9 @@ h3 {
 
 .projectCards {
   background-color: #eff0f3;
-  height: 600px;
-  width: 500px;
-  margin: 10px;
+  height: 750px;
+  padding: 1rem;
+  margin: 2rem;
   object-fit: contain;
   border-radius: 30px;
 
@@ -195,14 +199,14 @@ h3 {
 /* phone size */
 /* The above applies until the screen reaches 750px */
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 850px) {
   #navBarItemsWrapper {
     display: none;
     /* Anything under 600px the nav bar wont appear */
   }
 }
 
-@media screen and (min-width: 749px) {
+@media screen and (min-width: 849px) {
   /* #navBarItemsWrapper {
     display: flex;
   } */

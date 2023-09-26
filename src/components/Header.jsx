@@ -9,6 +9,13 @@ const Header = () => {
           <h1>Tanya French</h1>
         </div>
         <div id="burgerWrapper">
+          <nav>
+            <ul>
+              <li>Work</li>
+              <li>Contact</li>
+              <li>About</li>
+            </ul>
+          </nav>
           <svg
             id="burgerSvg"
             viewBox="0 -10 166 166"
@@ -70,7 +77,7 @@ const Header = () => {
           </svg>
         </div>
         <div id="navBarItemsWrapper">
-          <div id="navSpacer"></div>
+          {/* <div id="navSpacer"></div> */}
           <div className="navBarItems">
             <p>Work</p>
           </div>
