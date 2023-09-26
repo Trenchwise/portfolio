@@ -8,15 +8,20 @@ const Header = () => {
         <div className="nameTitle">
           <h1>Tanya French</h1>
         </div>
+
         <div id="burgerWrapper">
+          {/* starting working from this point - it contains the whole burger bumph */}
           <nav className="burgerNav">
             <input
               type="checkBox"
               id="checkBox"
               className="burgerMenuCheckBox"
             />
-            <label for="checkbox" className="burgerMenuBtn"></label>
+            <label for="checkBox" className="burgerNavCheckBox">
+              hello
+            </label>
 
+            {/* this contains the bits with the burger svg */}
             <ul className="burgerMenu">
               <li className="burgerMenuSvg">
                 <a href="#"></a>
