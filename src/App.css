@@ -123,27 +123,66 @@ h3 {
   right: 20px;
 }
 
-/* making checkbox disapear 
- .burgerMenuCheckBox {
-  /* opacity: 0; 
-  z-index: 100;
+.burgerSideBar {
+  background-color: blue;
+  height: 100vh;
+}
+
+.burgerNav {
+  font-size: 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 50%;
+  width: 50%;
+  gap: 1.5rem;
+
+  transition: 1s;
+  transform: translateY(-100vh);
+}
+
+/* .responsive_nav {
+  transform: none;
 } */
 
-/* can use opacity to get this to gradually appear */
-.burgerMenuProper {
-  display: none;
+ul li {
+  list-style: none;
 }
+
+.navCloseButton {
+  width: 90px;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.navButton {
+  padding: 5px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+/* can use opacity to get this to gradually appear */
+/* .burgerMenuProper {
+  display: none;
+} */
+
+/* keep this!! */
+/* /////////////////////////// */
 
 /* when burgerMenu is hovered it turns on .burgerMenuProper */
 /* It is also stays on until you click out of it */
 
-.burgerMenu:hover .burgerMenuProper,
+/* .burgerMenu:hover .burgerMenuProper,
 .burgerMenu:focus-within .burgerMenuProper {
   display: initial;
-}
+} */
 
-.burgerMenu ul li {
-  list-style: none;
+/* /////////////////////////// */
+
+a:hover {
+  color: coral;
 }
 
 #jobTitleContainer {
@@ -222,6 +261,7 @@ h3 {
 /* phone size */
 /* The above applies until the screen reaches 750px */
 
+/* smaller than or equal to: */
 @media screen and (max-width: 850px) {
   #navBarItemsWrapper {
     display: none;
@@ -235,6 +275,11 @@ h3 {
   } */
   #burgerSvg {
     display: none;
+  }
+
+  .navCloseButton {
+    visibility: visible;
+    opacity: 1;
   }
 }
 
