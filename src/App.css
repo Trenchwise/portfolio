@@ -123,30 +123,55 @@ h3 {
   right: 20px;
 }
 
+#burgerSvg:hover {
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+
 .burgerSideBar {
-  background-color: blue;
+  font-size: 1.5rem;
+  /* background-color: white; */
+  opacity: 0.5;
+  position: relative;
+  top: -10px;
+  right: -100px;
   height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  /* align-items: center; */
+  gap: 1.5rem;
 }
 
 .burgerNav {
-  font-size: 2rem;
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 50%;
-  width: 50%;
-  gap: 1.5rem;
+  background-color: antiquewhite;
 
-  transition: 1s;
-  transform: translateY(-100vh);
+  width: 250px;
+
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  font-size: 2rem;
+  /* position: fixed;
+  top: 0;
+  right: -100%; */
+
+  transition: 1.3s;
+  transform: translateZ(100vh);
 }
 
-/* .responsive_nav {
-  transform: none;
-} */
+.burgerMenuHidden {
+  background-color: antiquewhite;
+  opacity: 0;
+  width: 250px;
+  height: 100%;
+  right: 0;
+  /* transition: 1s;
+  transform: translateY(50px); */
+}
 
 ul li {
   list-style: none;
+  margin: 20px;
 }
 
 .navCloseButton {
