@@ -84,7 +84,7 @@ const Header = () => {
             </button>
             <div className="burgerSideBar">
               {/* if the burger menu is showing I want the class to be x if not then x */}
-              <nav className={burgerNav ? "burgerMenuHidden" : "burgerNav"}>
+              <nav className={burgerNav ? "burgerNav" : "burgerMenuHidden"}>
                 {/* burger menu links */}
                 <ul>
                   <li>

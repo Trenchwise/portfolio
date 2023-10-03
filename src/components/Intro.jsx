@@ -104,9 +104,9 @@ const Intro = () => {
         <div>
           <p>I have a background in finance and science</p>
         </div>
-        <div>I like to solve problems</div>
+        <p>I like to solve problems</p>
       </div>
-      <div className="sectionLine"></div>
+      {/* <div className="sectionLine"></div> */}
     </>
   );
 };

@@ -15,6 +15,7 @@ body {
   width: 100vw;
   overflow-y: scroll;
   overflow-x: hidden;
+  font-size: 1.5rem;
 
   /* width: 100vh; */
 
@@ -131,10 +132,12 @@ h3 {
 .burgerSideBar {
   font-size: 1.5rem;
   /* background-color: white; */
-  opacity: 0.5;
+  opacity: 1;
   position: relative;
-  top: -10px;
-  right: -100px;
+  top: 29.5px;
+  right: 0px;
+  width: 350px;
+
   height: 100vh;
   display: flex;
   justify-content: flex-start;
@@ -143,9 +146,13 @@ h3 {
 }
 
 .burgerNav {
-  background-color: antiquewhite;
+  background-color: #fca2e9;
+  border: #f15bb5 solid;
+  border-width: 3px;
+  border-radius: 20px;
+  /* greenish colour #00f5d4 */
 
-  width: 250px;
+  width: 350px;
 
   height: 100%;
   display: flex;
@@ -230,10 +237,11 @@ a:hover {
 }
 
 #introSection {
+  font-size: 5rem;
   display: flex;
   flex-direction: column;
   padding: 100px 0px 100px 0px;
-  font-size: 30px;
+  font-size: 40px;
   text-align: left;
   width: 100%;
   /* border-bottom: solid black 0.5px; */
@@ -248,19 +256,60 @@ a:hover {
   /* display: inline-block; this does not work*/
 }
 
+.projectsSection {
+  background-color: #aed7f2;
+  /* width: 100vh; */
+}
+
 .projectCards {
+  border: solid;
+  display: flex;
+  flex-direction: column;
+  border-width: 2.5px;
+  box-shadow: 5px 10px rgb(91, 181, 241, 0.4);
+  /* box-shadow: 5px 5px #fee440; */
+  border-color: #5bb5f1;
   background-color: #eff0f3;
-  height: 750px;
+  /* height: 750px; */
   padding: 1rem;
   margin: 2rem;
+  /* text-align: left; */
   object-fit: contain;
   border-radius: 30px;
 
   /* object-fit: cover; */
 }
 
+#projectsTitle {
+  padding-top: 20px;
+  font-size: 2.5rem;
+}
+
+.projectDiscription {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 5px;
+}
+
+.blueTick {
+  margin-right: 15px;
+  position: relative;
+  top: 10px;
+}
+
+.projectDiscriptionTitle {
+  text-align: center;
+}
+
 .imgCards {
   object-fit: contain;
+  /* opacity: 1; */
+}
+
+.crimeCheckerCard {
+  padding-top: 30px;
 }
 
 #homage,
