@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&family=Major+Mono+Display&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Urbanist:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Dosis:wght@200;300;400;500;600;700;800&family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&family=Major+Mono+Display&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Urbanist:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,900&display=swap");
+
 * {
   text-rendering: optimizeLegibility;
 }
@@ -10,15 +11,14 @@
 body {
   font-family: "Dosis", sans-serif;
   padding: 0;
+  margin: 0;
   height: fit-content;
   text-rendering: optimizeLegibility;
   width: 100vw;
   overflow-y: scroll;
   overflow-x: hidden;
   font-size: 1.5rem;
-
   /* width: 100vh; */
-
   display: flex;
   justify-content: center;
   /* margin: -10px 20px 10px 20px; */
@@ -26,13 +26,16 @@ body {
   /* display: flex;
   justify-content: center; */
   text-align: center;
+  background-color: #eff0f3;
 }
 
 h1,
 h2,
 h3 {
-  /* font-family: "Dosis", sans-serif; */
-  font-family: "Major Mono Display", monospace;
+  font-family: "Dosis", sans-serif;
+
+  /* font-family: "Major Mono Display", monospace; */
+  /* font-family: "Dela Gothic One"; */
 }
 
 /* #headerContainer {
@@ -57,15 +60,16 @@ h3 {
   /* display: flex;
   flex-wrap: nowrap; */
   /* justify-content: center; */
-  font-family: "Major Mono Display", monospace;
-  font-size: 20px;
+  font-family: "Dela Gothic One";
+  letter-spacing: 0.4rem;
+  font-size: 30px;
   min-width: 200px;
   height: 80px;
-  padding: -5px 0px 5px 0px;
+  padding: 0px 0px 5px 0px;
   white-space: nowrap;
-
   position: relative;
-  bottom: 15px;
+  top: -45px;
+  left: 10px;
 
   /* white-space: nowrap; stops it being responsive */
   /* margin: auto; */
@@ -77,19 +81,27 @@ h3 {
   display: flex;
   justify-content: space-between;
   position: sticky;
-  top: 0.5px;
+  top: 0.1px;
   left: 0;
-  background-color: white;
-  height: 70px;
+  background-color: #eff0f3;
+  /* background-color: #d9d5f5; lilac colour */
+  height: 80px;
   min-width: 380px;
-  transition: transform 0.28s ease-in-out, 0.28s ease-in-out;
+  transition: transform 0.5s ease-in-out, 0.5s ease-in-out;
   /* justify-content: flex-start; */
   min-width: 360px;
   margin: -20px 0px 0px 0px;
   /* how can I get the title to go to the top of the screen? */
   padding: 10px 0px 0px 0px;
+  /* box-shadow: 0px 0px 0px 10px rgba(0, 0, 0, 0.1); */
+  /* border-bottom: 10px rgb(239, 240, 243, 0.4) solid; */
+  z-index: 998;
+
+  border-bottom: solid black;
+  border-width: 2.5px;
 }
 
+/* not being used */
 .jobTitle {
   display: flex;
   font-size: 15px;
@@ -122,6 +134,7 @@ h3 {
   position: relative;
   top: -20px;
   right: 20px;
+  z-index: 999;
 }
 
 #burgerSvg:hover {
@@ -134,7 +147,7 @@ h3 {
   /* background-color: white; */
   opacity: 1;
   position: relative;
-  top: 29.5px;
+  top: -90px;
   right: 0px;
   width: 350px;
 
@@ -145,15 +158,34 @@ h3 {
   gap: 1.5rem;
 }
 
+.burgerNavItems {
+  font-family: "Dosis Bold", sans-serif;
+  letter-spacing: 0.3rem;
+  font-size: 22px;
+  opacity: 1;
+  border: #5bb5f1 solid;
+  border-width: 3px;
+  box-shadow: 3px 3px;
+  /* margin: 20px 20px 30px 20px; */
+  padding: 15px 5px 0px 5px;
+  color: black;
+  width: 200px;
+  height: 50px;
+}
+
+.burgerNavItems:hover {
+  transition: 0.5s;
+  transform: scale(1.03);
+}
+
 .burgerNav {
   background-color: #fca2e9;
   border: #f15bb5 solid;
   border-width: 3px;
   border-radius: 20px;
+  opacity: 0.9;
   /* greenish colour #00f5d4 */
-
   width: 350px;
-
   height: 100%;
   display: flex;
   justify-content: flex-start;
@@ -161,9 +193,14 @@ h3 {
   /* position: fixed;
   top: 0;
   right: -100%; */
-
   transition: 1.3s;
   transform: translateZ(100vh);
+}
+
+.burgerNavInner {
+  position: relative;
+  top: 100px;
+  opacity: 1;
 }
 
 .burgerMenuHidden {
@@ -237,6 +274,7 @@ a:hover {
 }
 
 #introSection {
+  margin-left: 30px;
   font-size: 5rem;
   display: flex;
   flex-direction: column;
@@ -244,8 +282,41 @@ a:hover {
   font-size: 40px;
   text-align: left;
   width: 100%;
+
   /* border-bottom: solid black 0.5px; */
-  /* background-color: #ff90e7; */
+  /* background-color: #5bb5f1; */
+}
+
+.selfie {
+  width: 200px;
+  z-index: 700;
+}
+
+.selfieWrapper {
+  display: flex;
+  justify-content: flex-start;
+  /* background-color: #ffc900; */
+
+  /* z-index: 800; */
+
+  /* position: absolute; */
+  /* display: flex;
+  /* justify-content: center; */
+}
+
+.purpleBlob {
+  width: 300px;
+  position: absolute;
+  top: 130px;
+  left: 225px;
+  stroke: #646464;
+  stroke-width: 50px;
+
+  /* z-index: 700; */
+}
+
+.introWords {
+  background-color: #f15bb5;
 }
 
 #projectsWrapper {
@@ -257,7 +328,10 @@ a:hover {
 }
 
 .projectsSection {
-  background-color: #aed7f2;
+  background-color: #d9d5f5;
+  border-top: solid;
+  border-bottom: solid;
+  border-width: 3px;
   /* width: 100vh; */
 }
 
@@ -266,16 +340,18 @@ a:hover {
   display: flex;
   flex-direction: column;
   border-width: 2.5px;
-  box-shadow: 5px 10px rgb(91, 181, 241, 0.4);
+  box-shadow: 7px 7px #306080;
+  /* box-shadow: 10px 10px rgb(91, 181, 241, 0.4); */
   /* box-shadow: 5px 5px #fee440; */
-  border-color: #5bb5f1;
+
+  border-color: #f15bb5;
   background-color: #eff0f3;
   /* height: 750px; */
   padding: 1rem;
   margin: 2rem;
   /* text-align: left; */
   object-fit: contain;
-  border-radius: 30px;
+  /* border-radius: 30px; */
 
   /* object-fit: cover; */
 }
@@ -297,39 +373,91 @@ a:hover {
   margin-right: 15px;
   position: relative;
   top: 10px;
+  height: 40px;
+  width: 40px;
 }
 
-.projectDiscriptionTitle {
+/* .projectDiscriptionTitle {
   text-align: center;
-}
+} */
 
-.imgCards {
+.imgCard {
   object-fit: contain;
   /* opacity: 1; */
+  /* border: #f15bb5 solid; */
 }
+
+.projectButton {
+  width: 350px;
+  height: 50px;
+  display: flex;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: solid;
+  background-color: #d9d5f5;
+  font-family: "Dosis", sans-serif;
+  color: black;
+
+  border-color: #f15bb5;
+  border-width: 3px;
+  box-shadow: 5px 5px #306080;
+  margin: 20px 20px 20px 20px;
+  padding-top: 5px;
+  /* padding: 10px 0px 5px 0px; */
+  position: relative;
+  border-radius: 3px;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.projectButton:hover {
+  transition: 0.3s;
+  transform: scale(1.15);
+}
+
+.buttonWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+/* .buttonWrapperInner {
+  display: flex;
+  margin-top: 10px;
+  padding-bottom: 5px;
+  background-color: #1f51ff;
+  width: 150px;
+  height: 70px;
+  display: inline-block;
+
+  position: relative;
+  left: 300px;
+  top: -100px;
+  z-index: ;
+} */
 
 .crimeCheckerCard {
   padding-top: 30px;
 }
 
-#homage,
-#crimeCheckerImage {
-  height: 200px;
-  width: 200px;
-  object-fit: contain;
-}
-
+#homageImage,
+#crimeCheckerImage,
 #simpsons,
 #agifyImage {
-  height: 400px;
+  /* height: 200px;
+  width: 200px; */
+  object-fit: contain;
+  border: #f15bb5 solid;
+  box-shadow: 5px 5px #306080;
+  width: 90%;
+  height: 100%;
 }
 
 #crimeCheckerImage,
 #agifyImage {
   /* object-fit: cover; did not work */
   /* makes the image a percent of the container, cool  */
-  width: 80%;
-  height: 100%;
+  /* width: 80%;
+  height: 100%; */
 }
 
 /* phone size */

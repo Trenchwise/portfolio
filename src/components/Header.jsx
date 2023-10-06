@@ -86,20 +86,22 @@ const Header = () => {
               {/* if the burger menu is showing I want the class to be x if not then x */}
               <nav className={burgerNav ? "burgerNav" : "burgerMenuHidden"}>
                 {/* burger menu links */}
-                <ul>
-                  <li>
-                    {" "}
-                    <a href="#"></a> Work
-                  </li>
-                  <li>
-                    {" "}
-                    <a href="#"></a>Contact
-                  </li>
-                  <li>
-                    {" "}
-                    <a href="#"></a>About
-                  </li>
-                </ul>
+                <div className="burgerNavInner">
+                  <ul>
+                    <li className="burgerNavItems">
+                      {" "}
+                      <a href="#"></a> Work
+                    </li>
+                    <li className="burgerNavItems">
+                      {" "}
+                      <a href="#"></a>Contact
+                    </li>
+                    <li className="burgerNavItems">
+                      {" "}
+                      <a href="#"></a>About
+                    </li>
+                  </ul>
+                </div>
               </nav>
             </div>
           </div>
@@ -118,9 +120,9 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <h2 id="jobTitle">Frontend Developer</h2>
-      <div className="sectionLine" id="navBarSectionLine"></div>
-      <button className="navButton navCloseButton">
+      {/* <h2 id="jobTitle">Frontend Developer</h2> */}
+      {/* <div className="sectionLine" id="navBarSectionLine"></div> */}
+      {/* <button className="navButton navCloseButton">
         <svg
           className="menuCloseButton"
           fill="#000000"
@@ -141,7 +143,7 @@ const Header = () => {
             </g>{" "}
           </g>
         </svg>
-      </button>
+      </button> */}
     </>
   );
 };
