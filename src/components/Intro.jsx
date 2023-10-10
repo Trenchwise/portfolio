@@ -18,7 +18,7 @@ const Intro = () => {
           </div>
           <div>
             <p>
-              Hi I'm Tanya{" "}
+              test Hi I'm Tanya{" "}
               {/* hand emoji
               <svg
                 width="30px"
