@@ -2,6 +2,10 @@ import React from "react";
 import wavingHandEmoji from "../assets/images/wavingHandEmoji.svg";
 import frenchSelfie from "../assets/images/frenchSelfie.png";
 import purpleBlob from "../assets/images/purpleBlob.svg";
+// import { FaIcons } from "react-icons/fa";
+import * as FaIcons from "react-icons/fa";
+import * as HiIcons from "react-icons/hi";
+import * as FiIcons from "react-icons/fi";
 
 const Intro = () => {
   return (
@@ -18,7 +22,7 @@ const Intro = () => {
           </div>
           <div>
             <p>
-              test Hi I'm Tanya{" "}
+              Hi I'm Tanya{" "}
               {/* hand emoji
               <svg
                 width="30px"
@@ -114,10 +118,19 @@ const Intro = () => {
             <p>I work with Javascript, React, Node.js</p>
           </div>
           <div>
-            <p>I have a background in finance and science</p>
+            <p>I have a background in finance and entrepreneurship</p>
           </div>
           <p>I like to solve problems</p>
         </div>
+      </div>
+      <div className="introIconsWrapper">
+        <a href="https://github.com/Trenchwise">
+          <FaIcons.FaGithubAlt className="introIcons " />
+        </a>
+        <HiIcons.HiOutlineMail className="introIcons " />
+        <a href="https://www.linkedin.com/in/tanya-french-9b66a227/">
+          <FiIcons.FiLinkedin className="introIcons " />
+        </a>
       </div>
       {/* <div className="sectionLine"></div> */}
     </>

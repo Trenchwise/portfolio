@@ -93,10 +93,10 @@ const Header = () => {
                       <a href="#work">Work</a>
                     </li>
 
-                    <li className="burgerNavItems">
+                    {/* <li className="burgerNavItems">
                       {" "}
                       <a href="#">About</a>
-                    </li>
+                    </li> */}
                     <li className="burgerNavItems">
                       {" "}
                       <a href="#">Contact</a>
@@ -117,13 +117,20 @@ const Header = () => {
         {/* these need to contain links too */}
         <div id="navBarItemsWrapper">
           <div className="navBarItems">
-            <p>Work</p>
+            <a href="#work">
+              {" "}
+              <p>Work</p>
+            </a>
           </div>
+          <div className="navBarItems">{/* <p>About</p> */}</div>
           <div className="navBarItems">
             <p>Contact</p>
           </div>
           <div className="navBarItems">
-            <p>About</p>
+            <a href="https://www.linkedin.com/in/tanya-french-9b66a227/">
+              {" "}
+              <p>LinkedIn</p>
+            </a>
           </div>
         </div>
       </div>

@@ -39,6 +39,7 @@ h3 {
 }
 
 a {
+  color: black;
   text-decoration: none;
 }
 
@@ -255,7 +256,12 @@ ul li {
 /* /////////////////////////// */
 
 a:hover {
-  color: coral;
+  color: #f15bb5;
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
 }
 
 #jobTitleContainer {
@@ -279,10 +285,10 @@ a:hover {
 
 #introSection {
   margin-left: 30px;
-  font-size: 5rem;
+  font-size: 4rem;
   display: flex;
   flex-direction: column;
-  padding: 100px 0px 100px 0px;
+  padding: 50px 0px 25px 0px;
   font-size: 40px;
   text-align: left;
   width: 100%;
@@ -308,7 +314,7 @@ a:hover {
   /* justify-content: center; */
 }
 
-.purpleBlob {
+/* .purpleBlob {
   width: 300px;
   position: absolute;
   top: 130px;
@@ -316,11 +322,25 @@ a:hover {
   stroke: #646464;
   stroke-width: 50px;
 
-  /* z-index: 700; */
-}
+  /* z-index: 700; 
+} */
 
 .introWords {
   background-color: #f15bb5;
+}
+
+.introIconsWrapper {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+
+.introIcons {
+  width: 10rem;
+  height: 2.5rem;
+  margin-bottom: 25px;
+  margin-left: -30px;
+  cursor: pointer;
 }
 
 #projectsWrapper {

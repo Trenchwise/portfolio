@@ -36,7 +36,10 @@ const Projects = () => {
                 {" "}
                 <LiveDemoButton />{" "}
               </a>
-              <GitHubButton />
+              <a href="https://github.com/Trenchwise/portfolio">
+                {" "}
+                <GitHubButton />{" "}
+              </a>
             </div>
 
             <div className="projectDiscription">
