@@ -5,11 +5,14 @@ import simpsonsPic from "../assets/images/simpsonsPic.png";
 import adobeHomageMobile from "../assets/images/adobeHomageMobile.png";
 import * as FaIcons from "react-icons/fa";
 import blackBlueTick from "../assets/icons/blackBlueTick.svg";
-import Button from "./Button";
+import LiveDemoButton from "./buttons/LiveDemoButton";
+import MoreInfoButton from "./buttons/MoreInfoButton";
+import GitHubButton from "./buttons/GitHubButton";
 
 const Projects = () => {
   return (
     <>
+      <div id="work"></div>
       <section className="projectsSection">
         <h1 id="projectsTitle">Work</h1>
         <p>A snap shot of the apps I've built in Javascript and React-Redux</p>
@@ -19,14 +22,22 @@ const Projects = () => {
           <div className="projectCards">
             {/* <h3>Crime Checker</h3> */}
             <div className="imgCard crimeCheckerCard">
-              <img
-                id="crimeCheckerImage"
-                src={crimeCheckerFullScreen}
-                alt="crimeCheckerpic"
-              />
+              <a href="https://crimechecker.co.uk/">
+                <img
+                  id="crimeCheckerImage"
+                  src={crimeCheckerFullScreen}
+                  alt="crimeCheckerpic"
+                />
+              </a>
             </div>
-
-            <Button />
+            <div className="ProjectButtonWrapper">
+              <MoreInfoButton />
+              <a href="https://crimechecker.co.uk/">
+                {" "}
+                <LiveDemoButton />{" "}
+              </a>
+              <GitHubButton />
+            </div>
 
             <div className="projectDiscription">
               <div>
@@ -61,7 +72,12 @@ const Projects = () => {
             <h3>Simpsons Quote Generator</h3>
             <div className="imgCard">
               <img id="simpsons" src={simpsonsPic} alt="simpsonsPic" />
-              <Button />
+
+              <div className="ProjectButtonWrapper">
+                <MoreInfoButton />
+                <LiveDemoButton />
+                <GitHubButton />
+              </div>
             </div>
             <div className="projectDiscription">
               <p>
@@ -86,7 +102,12 @@ const Projects = () => {
             <h3>Agify</h3>
             <div className="imgCard">
               <img id="agifyImage" src={agifyAppFullScreen} alt="agifyApp" />
-              <Button />
+
+              <div className="ProjectButtonWrapper">
+                <MoreInfoButton />
+                <LiveDemoButton />
+                <GitHubButton />
+              </div>
             </div>
             <div className="projectDiscription">
               <p>
@@ -115,7 +136,11 @@ const Projects = () => {
                 src={adobeHomageMobile}
                 alt="adobeHomagemobilePic"
               />
-              <Button />
+              <div className="ProjectButtonWrapper">
+                <MoreInfoButton />
+                <LiveDemoButton />
+                <GitHubButton />
+              </div>
             </div>
             <div className="projectDiscription">
               <p>

@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <>
       <div id="headerContainer">
-        <div className="nameTitle">
+        <div className="nameTitle" id="Home">
           <h1>Tanya French</h1>
         </div>
 
@@ -90,15 +90,22 @@ const Header = () => {
                   <ul>
                     <li className="burgerNavItems">
                       {" "}
-                      <a href="#"></a> Work
+                      <a href="#work">Work</a>
+                    </li>
+
+                    <li className="burgerNavItems">
+                      {" "}
+                      <a href="#">About</a>
                     </li>
                     <li className="burgerNavItems">
                       {" "}
-                      <a href="#"></a>Contact
+                      <a href="#">Contact</a>
                     </li>
                     <li className="burgerNavItems">
                       {" "}
-                      <a href="#"></a>About
+                      <a href="https://www.linkedin.com/in/tanya-french-9b66a227/">
+                        LinkedIn
+                      </a>
                     </li>
                   </ul>
                 </div>

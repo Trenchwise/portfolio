@@ -4,9 +4,8 @@ const Button = () => {
   return (
     <>
       <div className="buttonWrapper">
-        <button className="projectButton">Have a look</button>
+        <button className="projectButton">More info</button>
       </div>
-      <div className="buttonWrapperInner"></div>
     </>
   );
 };

@@ -38,6 +38,10 @@ h3 {
   /* font-family: "Dela Gothic One"; */
 }
 
+a {
+  text-decoration: none;
+}
+
 /* #headerContainer {
   display: flex;
   flex-wrap: nowrap;
@@ -328,7 +332,7 @@ a:hover {
 }
 
 .projectsSection {
-  background-color: #d9d5f5;
+  background-color: #e5e4f0;
   border-top: solid;
   border-bottom: solid;
   border-width: 3px;
@@ -343,8 +347,8 @@ a:hover {
   box-shadow: 7px 7px #306080;
   /* box-shadow: 10px 10px rgb(91, 181, 241, 0.4); */
   /* box-shadow: 5px 5px #fee440; */
-
-  border-color: #f15bb5;
+  /* border-color: #f15bb5; */
+  border-color: black;
   background-color: #eff0f3;
   /* height: 750px; */
   padding: 1rem;
@@ -387,8 +391,13 @@ a:hover {
   /* border: #f15bb5 solid; */
 }
 
+.ProjectButtonWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
 .projectButton {
-  width: 350px;
+  width: 150px;
   height: 50px;
   display: flex;
   font-size: 1.5rem;
@@ -397,7 +406,6 @@ a:hover {
   background-color: #d9d5f5;
   font-family: "Dosis", sans-serif;
   color: black;
-
   border-color: #f15bb5;
   border-width: 3px;
   box-shadow: 5px 5px #306080;
@@ -411,13 +419,8 @@ a:hover {
 }
 
 .projectButton:hover {
-  transition: 0.3s;
+  transition: 0.1s;
   transform: scale(1.15);
-}
-
-.buttonWrapper {
-  display: flex;
-  justify-content: center;
 }
 
 /* .buttonWrapperInner {
@@ -446,7 +449,7 @@ a:hover {
   /* height: 200px;
   width: 200px; */
   object-fit: contain;
-  border: #f15bb5 solid;
+  border: black solid;
   box-shadow: 5px 5px #306080;
   width: 90%;
   height: 100%;

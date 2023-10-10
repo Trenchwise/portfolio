@@ -19,6 +19,7 @@ const Intro = () => {
           <div>
             <p>
               Hi I'm Tanya{" "}
+              {/* hand emoji
               <svg
                 width="30px"
                 height="30px"
@@ -106,7 +107,7 @@ const Intro = () => {
                     </path>{" "}
                   </g>{" "}
                 </g>
-              </svg>{" "}
+              </svg>{" "} */}
             </p>
           </div>
           <div>
