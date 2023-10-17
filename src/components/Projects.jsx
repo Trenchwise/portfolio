@@ -59,8 +59,8 @@ const Projects = () => {
 
               <p>
                 <img src={blackBlueTick} alt="tickIcon" className="blueTick" />
-                Made with: Javascript - React Redux - CSS - HTML - Rest API
-                (police.uk)
+                Made with: Javascript - React Redux - CSS - HTML - Restful API
+                (police.uk) - responsive
               </p>
 
               <p>
@@ -85,14 +85,14 @@ const Projects = () => {
             <div className="projectDiscription">
               <p>
                 <img src={blackBlueTick} alt="tickIcon" className="blueTick" />
-                What is it? A fun Simpons quote generator. You can sort by
-                character, like or unlike your favourtie quotes and delete
-                characters.
+                What is it? A fun Simpons quote generator. It generates and
+                displays 10 quotes. You can sort by character, like or unlike
+                your favourtie quotes and delete characters.
               </p>
               <p>
                 <img src={blackBlueTick} alt="tickIcon" className="blueTick" />
-                Made with: Javascript - React Redux - Functional React - React
-                Hooks - Joi validation - CSS - HTML - Restful API{" "}
+                Made with: Javascript - Redux - Functional React - React Hooks -
+                Joi validation - CSS - HTML - RESTful API{" "}
               </p>
               <p>
                 <FaIcons.FaMedal className="blueTick" />
