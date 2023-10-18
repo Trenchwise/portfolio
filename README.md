@@ -1,9 +1,8 @@
-Images of project still to go in.
+# React + Vite
 
-burger menu needs setting up
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-finesing:
+Currently, two official plugins are available:
 
-Nav bar spacing
-Nav bar not not sticky. Disappearing on scroll
-project work needs to be full screen.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
