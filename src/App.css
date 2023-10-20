@@ -66,14 +66,14 @@ a {
   flex-wrap: nowrap; */
   /* justify-content: center; */
   font-family: "Dela Gothic One";
-  letter-spacing: 0.4rem;
-  font-size: 30px;
+  letter-spacing: 0.24rem;
+  font-size: 1.3rem;
   min-width: 200px;
   height: 80px;
   padding: 0px 0px 5px 0px;
   white-space: nowrap;
   position: relative;
-  top: -45px;
+  top: -25px;
   left: 10px;
 
   /* white-space: nowrap; stops it being responsive */
@@ -90,8 +90,8 @@ a {
   left: 0;
   background-color: #eff0f3;
   /* background-color: #d9d5f5; lilac colour */
-  height: 80px;
-  min-width: 380px;
+  height: 65px;
+  /* min-width: 380px; */
   transition: transform 0.5s ease-in-out, 0.5s ease-in-out;
   /* justify-content: flex-start; */
   min-width: 360px;
@@ -133,12 +133,12 @@ a {
 
 #burgerSvg {
   justify-content: flex-end;
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
   margin: 28px 0px 0px 300px;
   position: relative;
-  top: -20px;
-  right: 20px;
+  top: -13px;
+  right: 10px;
   z-index: 999;
 }
 
@@ -285,11 +285,11 @@ a:visited {
 
 #introSection {
   margin-left: 30px;
-  font-size: 4rem;
+  font-size: 1.7rem;
   display: flex;
   flex-direction: column;
   padding: 50px 0px 25px 0px;
-  font-size: 40px;
+  /* font-size: 40px; */
   text-align: left;
   width: 100%;
 
@@ -363,6 +363,9 @@ a:visited {
   border: solid;
   display: flex;
   flex-direction: column;
+  /* width works well for mobile - need to amend in larger screens */
+  width: 300px;
+  font-size: 1rem;
   border-width: 2.5px;
   box-shadow: 7px 7px #306080;
   /* box-shadow: 10px 10px rgb(91, 181, 241, 0.4); */
@@ -397,8 +400,9 @@ a:visited {
   margin-right: 15px;
   position: relative;
   top: 10px;
-  height: 40px;
-  width: 40px;
+  height: 30px;
+  width: 30px;
+  margin-bottom: 7px;
 }
 
 /* .projectDiscriptionTitle {
@@ -413,14 +417,15 @@ a:visited {
 
 .ProjectButtonWrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .projectButton {
-  width: 150px;
-  height: 50px;
+  width: 70px;
+  height: 25px;
   display: flex;
-  font-size: 1.5rem;
+  justify-content: center;
+  font-size: 0.7rem;
   font-weight: bold;
   border: solid;
   background-color: #d9d5f5;
@@ -430,11 +435,10 @@ a:visited {
   border-width: 3px;
   box-shadow: 5px 5px #306080;
   margin: 20px 20px 20px 20px;
-  padding-top: 5px;
+
   /* padding: 10px 0px 5px 0px; */
   position: relative;
   border-radius: 3px;
-  justify-content: center;
   cursor: pointer;
 }
 
@@ -492,6 +496,9 @@ a:visited {
     display: none;
     /* Anything under 600px the nav bar wont appear */
   }
+  #introSection {
+    max-width: 520px;
+  }
 }
 
 @media screen and (min-width: 849px) {
@@ -505,6 +512,52 @@ a:visited {
   .navCloseButton {
     visibility: visible;
     opacity: 1;
+  }
+
+  #introSection {
+    font-size: 2.5rem;
+  }
+
+  .selfie {
+    width: 300px;
+  }
+
+  .nameTitle {
+    font-size: 2rem;
+  }
+
+  #headerContainer {
+    height: 110px;
+  }
+
+  #navBarItemsWrapper {
+    position: relative;
+    top: 20px;
+  }
+
+  .selfieWrapper,
+  #introSection,
+  .introIconsWrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .projectCards {
+    width: 700px;
+    font-size: 1.5rem;
+  }
+
+  .projectButton {
+    width: 140px;
+    height: 50px;
+    font-size: 1.2rem;
+    align-items: center;
+  }
+
+  .ProjectButtonWrapper {
+  }
+
+  @media screen and (min-width: 1049px) {
   }
 }
 

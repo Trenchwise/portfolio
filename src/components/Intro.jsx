@@ -118,7 +118,10 @@ const Intro = () => {
             <p>I work with Javascript, React, Node.js</p>
           </div>
           <div>
-            <p>I have a background in finance and entrepreneurship</p>
+            <p>
+              I have a background in entrepreneurship and a masters degree in
+              journalism
+            </p>
           </div>
           <p>I like to solve problems</p>
         </div>
