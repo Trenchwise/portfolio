@@ -70,7 +70,8 @@ a {
   font-size: 1.3rem;
   min-width: 200px;
   height: 80px;
-  padding: 0px 0px 5px 0px;
+  padding: 0px 0px 20px 0px;
+  padding-left: 20px;
   white-space: nowrap;
   position: relative;
   top: -25px;
@@ -487,6 +488,35 @@ a:visited {
   height: 100%; */
 }
 
+.formWrapper {
+  /* height: 300px;
+  width: 300px; */
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+form {
+  /* padding: 100px; */
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form input,
+textarea {
+  display: flex;
+  margin: 5px;
+  padding: 10px;
+  border: black solid;
+  width: 300px;
+  font-size: 1rem;
+  border-width: 2.5px;
+  box-shadow: 7px 7px #306080;
+}
+
 /* phone size */
 /* The above applies until the screen reaches 750px */
 
@@ -554,7 +584,9 @@ a:visited {
     align-items: center;
   }
 
-  .ProjectButtonWrapper {
+  .formInput {
+    width: 600px;
+    margin: 7px;
   }
 
   @media screen and (min-width: 1049px) {

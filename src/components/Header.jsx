@@ -107,7 +107,7 @@ const Header = () => {
                         LinkedIn
                       </a>
                     </li>
-                    <li>CV</li>
+                    {/* <li>CV</li> */}
                   </ul>
                 </div>
               </nav>
@@ -133,9 +133,9 @@ const Header = () => {
               <p>LinkedIn</p>
             </a>
           </div>
-          <div className="navBarItems">
+          {/* <div className="navBarItems">
             <p>CV</p>
-          </div>
+          </div> */}
         </div>
       </div>
       {/* <h2 id="jobTitle">Frontend Developer</h2> */}
