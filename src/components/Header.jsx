@@ -99,7 +99,7 @@ const Header = () => {
                     </li> */}
                     <li className="burgerNavItems">
                       {" "}
-                      <a href="#">Contact</a>
+                      <a href="#contact">Contact</a>
                     </li>
                     <li className="burgerNavItems">
                       {" "}
@@ -123,9 +123,10 @@ const Header = () => {
               <p>Work</p>
             </a>
           </div>
-          <div className="navBarItems">{/* <p>About</p> */}</div>
           <div className="navBarItems">
-            <p>Contact</p>
+            <a href="#contact">
+              <p>Contact</p>
+            </a>
           </div>
           <div className="navBarItems">
             <a href="https://www.linkedin.com/in/tanya-french-9b66a227/">

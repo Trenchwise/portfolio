@@ -276,7 +276,7 @@ a:visited {
 }
 
 .navBarItems {
-  font-size: 25px;
+  font-size: 2rem;
   margin: 0 20px 0 20px;
 }
 
@@ -300,6 +300,7 @@ a:visited {
 
 .selfie {
   width: 200px;
+  /* height: 220px; */
   z-index: 700;
 }
 
