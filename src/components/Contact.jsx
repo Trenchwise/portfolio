@@ -1,91 +1,56 @@
 import React from "react";
-import { useDispatch } from "react-redux";
-// import { validate } from "";
 import { API_KEY } from "../../key";
 
-const Contact = () => {
-  // const dispatch = useDispatch();
-  //   const [errors, setErrors] = useState({});
-  //   const [userInput, setUserInput] = useState({});
-  //   const [submitted, setSubmitted] = useState(false);
+function App() {
+  const [result, setResult] = React.useState("");
 
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending....");
+    const formData = new FormData(event.target);
 
-  //   const formData = new FormData(e.target);
-  //   formData.append("access_key", API_KEY);
-  //   const res = await validate(userInput, "contactForm");
+    formData.append("access_key", API_KEY);
 
-  //   console.log(res);
+    const res = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    }).then((res) => res.json());
 
-  //   if (!res) {
-  //     try {
-  //       const response = await fetch("https://api.web3forms.com/submit", {
-  //         method: "POST",
-  //         body: formData,
-  //       });
-  //       console.log(response);
-
-  //       setSubmitted(true);
-  //     } catch (error) {
-  //       console.log(error);
-  //     }
-  //   }
-  //   setErrors(!res ? {} : res);
-  // };
-
-  // if (submitted) {
-  //   return <p>Thanks for getting in touch!</p>;
-  // }
+    if (res.success) {
+      console.log("Success", res);
+      setResult(res.message);
+    } else {
+      console.log("Error", res);
+      setResult(res.message);
+    }
+  };
 
   return (
-    <>
-      <div id="contact">
-        <h1>Contact me</h1>
-        <p>
-          Got some feedback or need some info? Get in touch, I'd love to hear
-          from you. Aternatively you can{" "}
-          <a href="mailto:me@tanyafrench.com">email</a> or{" "}
-          <a href="tel:+44 77236 89778">call me.</a>{" "}
-        </p>
-        <div className="formWrapper">
-          <form
-          // onInput={(e) => {
-          //   setUserInput({ ...userInput, [e.target.name]: e.target.value });
-          // }}
-          // onSubmit={handleSubmit}
-          >
-            <input
-              id="name"
-              className="formInput"
-              type="text"
-              name="name"
-              placeholder="Name"
-              required
-            />
-            <input
-              className="formInput"
-              type="email"
-              name="email"
-              placeholder="Email"
-              required
-            />
-            <textarea
-              className="formInput"
-              name="message"
-              id=""
-              cols="30"
-              rows="10"
-              placeholder="Message"
-              required
-            ></textarea>
-
-            <button className="projectButton">Send</button>
-          </form>
+    <div className="form">
+      <h1>Get in touch!</h1>
+      <p>
+        Got some feedback, need some info? Get in touch, I'd love to hear from
+        you. Aternatively you can <a href="mailto:me@tanyafrench.com">email</a>{" "}
+        or <a href="tel:+44 77236 89778">call me.</a>{" "}
+      </p>
+      <form onSubmit={onSubmit}>
+        <div>
+          <label htmlFor="name"></label>
+          <input type="text" name="name" placeholder="Name" />
         </div>
-      </div>
-    </>
+        <div>
+          <label htmlFor="email"></label>
+          <input type="email" name="email" placeholder="Email" />
+        </div>
+        <div>
+          <label htmlFor="message"></label>
+          <textarea name="message" placeholder="Message here"></textarea>
+        </div>
+        <button className="projectButton">Send</button>
+      </form>
+      <span>{result}</span>
+    </div>
   );
-};
+}
 
-export default Contact;
+export default App;
