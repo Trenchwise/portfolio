@@ -11,9 +11,9 @@ function App() {
     const formData = new FormData(event.target);
 
     formData.append("access_key", API_KEY);
-    const res = await validate(userInput, "contactForm");
+    const res1 = await validate(userInput, "contactForm");
 
-    const response = await fetch("https://api.web3forms.com/submit", {
+    const res = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
       body: formData,
     }).then((res) => res.json());
@@ -46,7 +46,12 @@ function App() {
         </div>
         <div>
           <label htmlFor="message"></label>
-          <textarea name="message" placeholder="Message here"></textarea>
+          <textarea
+            name="message"
+            placeholder="Message here"
+            rows="7"
+            cols="7"
+          ></textarea>
         </div>
         <button className="projectButton">Send</button>
       </form>
