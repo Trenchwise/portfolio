@@ -1,5 +1,6 @@
 import React from "react";
 import { API_KEY } from "../../key";
+import { validate } from "../validation";
 
 function App() {
   const [result, setResult] = React.useState("");
@@ -10,8 +11,9 @@ function App() {
     const formData = new FormData(event.target);
 
     formData.append("access_key", API_KEY);
+    const res = await validate(userInput, "contactForm");
 
-    const res = await fetch("https://api.web3forms.com/submit", {
+    const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
       body: formData,
     }).then((res) => res.json());
