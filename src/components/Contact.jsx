@@ -11,7 +11,7 @@ function App() {
     const formData = new FormData(event.target);
 
     formData.append("access_key", API_KEY);
-    const res1 = await validate(userInput, "contactForm");
+    // const res1 = await validate(userInput, "contactForm");
 
     const res = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
