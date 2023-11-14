@@ -22,6 +22,7 @@ const Projects = () => {
           <div className="projectCards">
             {/* <h3>Crime Checker</h3> */}
             <div className="imgCard crimeCheckerCard">
+              <h3>Stop and Search Tool</h3>
               <a href="https://crimechecker.co.uk/">
                 <img
                   id="crimeCheckerImage"
@@ -103,7 +104,7 @@ const Projects = () => {
           </div>
           <div className="projectCards">
             <h3>Agify</h3>
-            <div className="imgCard">
+            <div id="agifyCard" className="imgCard">
               <img id="agifyImage" src={agifyAppFullScreen} alt="agifyApp" />
 
               <div className="ProjectButtonWrapper">

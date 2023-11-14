@@ -315,7 +315,7 @@ a:visited {
   /* flex-direction: column; */
   justify-content: flex-start;
   margin: 20px;
-  width: 100vw;
+  /* width: 100vw; */
 }
 
 /* .introIconsWrapper {
@@ -595,14 +595,13 @@ textarea {
   }
 
   .selfieWrapper,
-  #introSection,
-  .introIconsWrapper {
+  #introSection {
     display: flex;
     justify-content: center;
   }
 
   .projectCards {
-    width: 700px;
+    width: 600px;
     font-size: 1.5rem;
   }
 
@@ -620,8 +619,12 @@ textarea {
 
   @media screen and (min-width: 1049px) {
     .projectCards {
-      width: 1000px;
+      width: 800px;
       font-size: 1.5rem;
+    }
+    #agifyImage {
+      height: 300px;
+      display: block;
     }
 
     .projectButton {
@@ -629,6 +632,14 @@ textarea {
       height: 40px;
       font-size: 1.2rem;
       align-items: center;
+    }
+
+    #projectsWrapper {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+
+      /* display: inline-block; this does not work*/
     }
   }
 }
