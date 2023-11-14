@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [burgerNav, setBurgerNav] = useState(false);
@@ -90,6 +91,7 @@ const Header = () => {
                   <ul>
                     <li className="burgerNavItems">
                       {" "}
+                      {/* <Link to="/projects">Work</Link> */}
                       <a href="#work">Work</a>
                     </li>
 
@@ -100,6 +102,7 @@ const Header = () => {
                     <li className="burgerNavItems">
                       {" "}
                       <a href="#contact">Contact</a>
+                      {/* <Link to="/contact">Contact</Link> */}
                     </li>
                     <li className="burgerNavItems">
                       {" "}

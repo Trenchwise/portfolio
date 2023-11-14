@@ -28,7 +28,7 @@ function App() {
   };
 
   return (
-    <div className="form">
+    <div className="form" id="contact">
       <h1>Get in touch!</h1>
       <p>
         Got some feedback, need some info? Get in touch, I'd love to hear from

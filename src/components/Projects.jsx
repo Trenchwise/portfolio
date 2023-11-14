@@ -31,7 +31,7 @@ const Projects = () => {
               </a>
             </div>
             <div className="ProjectButtonWrapper">
-              <MoreInfoButton />
+              {/* <MoreInfoButton /> */}
               <a href="https://crimechecker.co.uk/">
                 {" "}
                 <LiveDemoButton />{" "}
@@ -77,7 +77,7 @@ const Projects = () => {
               <img id="simpsons" src={simpsonsPic} alt="simpsonsPic" />
 
               <div className="ProjectButtonWrapper">
-                <MoreInfoButton />
+                {/* <MoreInfoButton /> */}
                 <LiveDemoButton />
                 <GitHubButton />
               </div>
@@ -107,7 +107,7 @@ const Projects = () => {
               <img id="agifyImage" src={agifyAppFullScreen} alt="agifyApp" />
 
               <div className="ProjectButtonWrapper">
-                <MoreInfoButton />
+                {/* <MoreInfoButton /> */}
                 <LiveDemoButton />
                 <GitHubButton />
               </div>
@@ -140,7 +140,7 @@ const Projects = () => {
                 alt="adobeHomagemobilePic"
               />
               <div className="ProjectButtonWrapper">
-                <MoreInfoButton />
+                {/* <MoreInfoButton /> */}
                 <LiveDemoButton />
                 <GitHubButton />
               </div>

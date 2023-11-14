@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "./components/Header";
-import Intro from "./components/Intro";
+import Home from "./components/Home";
 import Projects from "./components/Projects";
 // import AboutMe from "./components/AboutMe";
 import Contact from "./components/Contact";
@@ -13,14 +13,17 @@ const App = () => {
   return (
     <>
       <Header />
-      <Intro />
-
-      {/* <Routes> */}
+      <Home />
       <Projects />
-      {/* <Route path="projects" element={<Projects />} /> */}
       <Contact />
-      {/* <Route path="contact" element={<Contact />} /> */}
-      {/* </Routes> */}
+
+      {/* <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/projects" element={<Projects />} />
+
+        <Route path="/contact" element={<Contact />} />
+      </Routes> */}
+
       <Footer />
     </>
   );

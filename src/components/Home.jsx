@@ -1,7 +1,6 @@
 import React from "react";
 import wavingHandEmoji from "../assets/images/wavingHandEmoji.svg";
 import frenchSelfie from "../assets/images/frenchSelfie.png";
-import purpleBlob from "../assets/images/purpleBlob.svg";
 // import { FaIcons } from "react-icons/fa";
 import * as FaIcons from "react-icons/fa";
 import * as HiIcons from "react-icons/hi";
@@ -130,12 +129,13 @@ const Intro = () => {
         <a href="https://github.com/Trenchwise">
           <FaIcons.FaGithubAlt className="introIcons " />
         </a>
-        <HiIcons.HiOutlineMail className="introIcons " />
         <a href="https://www.linkedin.com/in/tanya-french-9b66a227/">
           <FiIcons.FiLinkedin className="introIcons " />
         </a>
+        <a href="mailto:me@tanyafrench.com ">
+          <HiIcons.HiOutlineMail className="introIcons " />
+        </a>
       </div>
-      {/* <div className="sectionLine"></div> */}
     </>
   );
 };
